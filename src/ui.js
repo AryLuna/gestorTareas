@@ -2,7 +2,7 @@ import { getTasks} from "./task";
 
 // Función para mostrarlew al usuario las tareas
 export const renderTasks = () => {
-    const taskList = documnent.getElementById("task-list");
+    const taskList = document.getElementById("task-list");
     taskList.innerHTML = '';
     const tasks = getTasks();
 
@@ -17,8 +17,10 @@ export const renderTasks = () => {
 
         li.innerHTML = `
             ${task.text}
+            <div class="buttons">
             <button class="delete"> Eliminar </button>
-            <button clas="toggle"> ${ task.completed === false ? "Completar" : "" }  </button>  
+            <button class="toggle"> ${ task.completed === false ? "Completar" : "Deshacer" }  </button>  
+            </div>
         `;
 
         taskList.appendChild(li);

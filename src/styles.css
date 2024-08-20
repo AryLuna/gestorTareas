@@ -1,21 +1,18 @@
-/* Estilos generañes */
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Matemasie&display=swap');
+
+  /* Estilos generales */
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background: #fff;
+    background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abded4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 2em;
 }
 
 /* Estilos para el contenedor principal */
 #app { 
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 85px;
+
 }
 
 /* Estilos para el formulario*/
@@ -28,9 +25,12 @@ form {
 input {
     width: 75%;
     padding: 8px;
-    margin-right: 10px;
-    border: 1px solid #ddd;
+    margin-right: 5px;
     border-radius: 3px;
+    border-color: #369bee;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-size: 14px;
 }
 
 /* Estilos al botón */
@@ -41,28 +41,46 @@ button {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-size: 14px;
 }
 
 /* Estilos de la lista */
 ul{
     list-style: none;
-    padding: 0;
+    padding: 8px;
+    margin-right: 3px;
+    border-radius: 3px;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-size: 14px;
 }
 
 /* Estilos a los elementos de la lista */
 
 li {
-    background-color: #f4f4f4;
-    padding: 10px;
-    border: 1px solid #ddd;
-    margin-top: 10px;
+    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 400px;
 }
 
 /* Estilos para cuando una tarea está completada */
 li.completed {
     text-decoration: line-through;
     color: #888;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #369bee;
+      
 }
